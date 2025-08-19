@@ -1,0 +1,98 @@
+:root {
+  --color-bg: #f5faff;
+  --color-sidebar-bg: #e3efff;
+  --color-sidebar-border: #b3d1f7;
+  --color-main-bg: #ffffff;
+  --color-accent: #3578e5;
+  --color-accent-light: #a3c9f9;
+  --color-text: #22334a;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+  background: var(--color-bg);
+  transition: grid-template-columns 0.3s;
+}
+
+.side-bar-container {
+  background: var(--color-sidebar-bg);
+  border-right: 1px solid var(--color-sidebar-border);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 180px;
+  max-width: 320px;
+}
+
+.todo-list {
+  background: var(--color-main-bg);
+  padding: 2rem 2vw;
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+  min-height: 100vh;
+}
+
+@media (max-width: 700px) {
+  #main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .side-bar-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-right: none;
+    border-bottom: 1px solid var(--color-sidebar-border);
+    padding: 1rem 0.5rem;
+    min-width: 0;
+    max-width: none;
+    overflow-x: auto;
+  }
+  .todo-list {
+    padding: 1rem 2vw;
+  }
+}
+
+/* .side-bar-container h2 {
+  color: var(--color-accent);
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+}
+
+.side-bar-container nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.side-bar-container a,
+.side-bar-container button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1rem;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.side-bar-container a:hover,
+.side-bar-container button:hover {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+} */
+

@@ -1,6 +1,7 @@
-# RestaurantApp
+# ToDoList
 
-A minimalist web app using pure HTML, CSS, and JavaScript. Bundled with webpack and managed with npm.
+A minimalist ToDoList web app for learning purposes.
+Using pure HTML, CSS, and JavaScript. Bundled with webpack and managed with npm.
 
 ## Structure
 - `src/` contains source files (`index.html`, `style.css`, `main.js`)
@@ -10,7 +11,7 @@ A minimalist web app using pure HTML, CSS, and JavaScript. Bundled with webpack 
 ## Getting Started
 1. Install dependencies: `npm install`
 2. Build: `npm run build`
-3. Start: `npm start` (if configured)
+3. Start: `npm start`
 
 ## Customization
 No frameworks. Extend with your own HTML, CSS, and JS as needed.
